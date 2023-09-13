@@ -25,9 +25,9 @@ class Register extends React.Component {
     })
     .then(response => response.json())
     .then(user => {
-      if (user.hasOwnProperty('id')){
+      if (user[0].hasOwnProperty('id')){
         this.props.loadUser(user);
-        this.props.onRouteChange('home');
+        this.props.onRouteChange('signin');
       }
     })
       .catch(err=> resizeBy.status(400).json('User already exists.'))
