@@ -30,7 +30,7 @@ class Register extends React.Component {
         this.props.onRouteChange('signin');
       }
     })
-      .catch(err=> resizeBy.status(400).json('User already exists.'))
+      .catch(err=> res.status(400).json('User already exists.'))
   }
 
   onNameChange = (event) => {
