@@ -81,7 +81,7 @@ class App extends Component {
     // for the Face Detect Mode: https://www.clarifai.com/models/face-detection
     // If that isn't working, then that means you will have to wait until their servers are back up. 
 
-        fetch("http://localhost:3000/imageUrl",{
+        fetch("https://smart-brain-server-l2dy.onrender.com/imageUrl",{
           method:"POST",
           allowedHeaders: ['Content-Type','Authorization'],
           xContentTypeOptions: 'nosniff',
@@ -96,7 +96,7 @@ class App extends Component {
         .then(result =>{
           console.log('Before image endpoint fetch',result);
           if(result){
-            fetch("http://localhost:3000/image",{
+            fetch("https://smart-brain-server-l2dy.onrender.com/image",{
               method:"PUT",
               allowedHeaders: ['Content-Type','Authorization'],
               xContentTypeOptions: 'nosniff',

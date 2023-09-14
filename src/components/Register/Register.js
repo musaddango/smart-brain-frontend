@@ -11,7 +11,7 @@ class Register extends React.Component {
   }
 
   onSubmitRegister = () => {
-    fetch('http://localhost:3000/register',{
+    fetch('https://smart-brain-server-l2dy.onrender.com/register',{
       mode:'cors',
       method: 'post',
       body: JSON.stringify({
