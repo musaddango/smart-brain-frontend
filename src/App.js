@@ -82,7 +82,7 @@ class App extends Component {
     // If that isn't working, then that means you will have to wait until their servers are back up. 
 
         fetch("https://smart-brain-server-l2dy.onrender.com/imageUrl",{
-          method:"POST",
+          method:"PUT",
           allowedHeaders: ['Content-Type','Authorization'],
           xContentTypeOptions: 'nosniff',
           headers: {
